@@ -15,12 +15,12 @@ D:/Users/scott/Documents/GitHub/Shoeby-lens
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51237
+54918
 Successfully changed project path to: D:/Users/scott/Documents/GitHub/Shoeby-lens
 D:/Users/scott/Documents/GitHub/Shoeby-lens
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 3446.68 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 198.55 ms.
+Refreshing native plugins compatible for Editor in 686.20 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 7.15 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Users/scott/Documents/GitHub/Shoeby-lens/Assets
@@ -36,5 +36,5 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
 Begin MonoManager ReloadAssembly
