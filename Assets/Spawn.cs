@@ -11,10 +11,11 @@ public class Spawn : MonoBehaviour
 
     public void InstantiateMap()
     {
-        if (created == false)
+        if (!created)
         {
             Instantiate(Map, leftHand.transform);
             created = true;
+            Debug.Log("click");
         }
     }
 }

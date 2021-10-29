@@ -8,6 +8,7 @@ public class ButtonMap : MonoBehaviour
 {
 
     public UnityEvent spawnMap;
+    public UnityEvent defaultState;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,9 @@ public class ButtonMap : MonoBehaviour
         {
             spawnMap.Invoke();
         }
+        else
+        {
+            defaultState.Invoke();
+        };
     }
 }
