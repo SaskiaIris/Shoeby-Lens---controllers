@@ -21,10 +21,4 @@ public class ButtonMap : MonoBehaviour
             spawnMap.Invoke();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
