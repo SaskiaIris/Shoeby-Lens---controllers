@@ -1,21 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawn : MonoBehaviour
 {
-
-    public GameObject leftHand;
-    public GameObject Map;
-    private bool created = false;
-
-    public void InstantiateMap()
+    public void GoToScene()
     {
-        if (!created)
-        {
-            Instantiate(Map, leftHand.transform);
-            created = true;
-            Debug.Log("click");
-        }
+        SceneManager.LoadScene("GrabClothing");
     }
 }

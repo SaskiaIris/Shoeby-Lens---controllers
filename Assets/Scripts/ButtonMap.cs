@@ -7,8 +7,11 @@ using UnityEngine.Events;
 public class ButtonMap : MonoBehaviour
 {
 
-    public UnityEvent spawnMap;
+    public UnityEvent contact;
+    public UnityEvent prox;
     public UnityEvent defaultState;
+    public UnityEvent action;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,15 @@ public class ButtonMap : MonoBehaviour
     {
         if(state.NewInteractableState == InteractableState.ContactState)
         {
-            spawnMap.Invoke();
+            contact.Invoke();
+        }
+        if(state.NewInteractableState == InteractableState.ProximityState)
+        {
+            prox.Invoke();
+        }
+        if(state.NewInteractableState == InteractableState.ActionState)
+        {
+            action.Invoke();
         }
         else
         {
