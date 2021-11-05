@@ -36,10 +36,11 @@ public class HandTrackingGrabber : OVRGrabber
     {
         if (m_grabbedObj)
         {
-            Vector3 linearVelocity = (transform.position - m_lastPos) / Time.fixedDeltaTime;
-            Vector3 angularVelocity = (transform.eulerAngles - m_lastRot.eulerAngles) / Time.fixedDeltaTime;
+            Vector3 linearVelocity = (transform.parent.position - m_lastPos) / Time.fixedDeltaTime;
+            Vector3 angularVelocity = (transform.parent.eulerAngles - m_lastRot.eulerAngles) / Time.fixedDeltaTime;
 
             GrabbableRelease(linearVelocity, angularVelocity);
+            
 
         }
 
