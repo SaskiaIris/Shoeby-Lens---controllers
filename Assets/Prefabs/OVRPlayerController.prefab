@@ -244,7 +244,7 @@ MonoBehaviour:
   RotationAngle: 45
   Speed: 0
   CameraRig: {fileID: 0}
---- !u!1001 &4870136745791109650
+--- !u!1001 &2778609799301289807
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -253,7 +253,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589316163150269759, guid: 7eeb75389fe7c7243a732eb38f4a72f2, type: 3}
       propertyPath: m_Name
-      value: OVRHandPrefab
+      value: OVRHandPrefab 1
       objectReference: {fileID: 0}
     - target: {fileID: 4955625334024914651, guid: 7eeb75389fe7c7243a732eb38f4a72f2, type: 3}
       propertyPath: m_RootOrder
