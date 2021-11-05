@@ -11,19 +11,19 @@ D:\Program Files\Unity\Editor\2020.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-D:/Users/scott/Documents/GitHub/Shoeby-lens
+D:/Users/scott/Documents/GitHub/shoeby-lens-controllers
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51237
-Successfully changed project path to: D:/Users/scott/Documents/GitHub/Shoeby-lens
-D:/Users/scott/Documents/GitHub/Shoeby-lens
+63951
+Successfully changed project path to: D:/Users/scott/Documents/GitHub/shoeby-lens-controllers
+D:/Users/scott/Documents/GitHub/shoeby-lens-controllers
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 67.92 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 64.94 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.75 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Users/scott/Documents/GitHub/Shoeby-lens/Assets
+[Subsystems] Discovering subsystems at path D:/Users/scott/Documents/GitHub/shoeby-lens-controllers/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -36,5 +36,5 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
