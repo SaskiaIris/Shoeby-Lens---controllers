@@ -6,6 +6,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class TeleportationController : MonoBehaviour
 {
     [SerializeField]
+    private XRController leftTeleportRay;
+
+    [SerializeField]
     private XRController rightTeleportRay;
 
     [SerializeField]
@@ -14,16 +17,11 @@ public class TeleportationController : MonoBehaviour
     [SerializeField]
     private float activationThreshold = 0.1f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if(rightTeleportRay) {
+        if(leftTeleportRay && !rightTeleportRay && !rightTeleportRay.gameObject.activeSelf) {
+            leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
+        } else if(rightTeleportRay && !leftTeleportRay && !leftTeleportRay.gameObject.activeSelf) {
             rightTeleportRay.gameObject.SetActive(CheckIfActivated(rightTeleportRay));
         }
     }
