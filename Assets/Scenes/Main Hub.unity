@@ -11897,6 +11897,7 @@ GameObject:
   - component: {fileID: 878763062}
   - component: {fileID: 878763061}
   - component: {fileID: 878763063}
+  - component: {fileID: 878763064}
   m_Layer: 0
   m_Name: VRrig
   m_TagString: Untagged
@@ -11981,6 +11982,28 @@ MonoBehaviour:
   rightTeleportRay: {fileID: 358324445}
   teleportActivationButton: 2
   activationThreshold: 0.1
+--- !u!114 &878763064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878763058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 1645720964}
+  - {fileID: 1820369816}
+  m_DeadZone: 0.75
 --- !u!1001 &880070517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27706,6 +27729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Teleport Ray
       objectReference: {fileID: 0}
+    - target: {fileID: 2370930726588367214, guid: b12db60a297c6004596ee6ad80b432a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12db60a297c6004596ee6ad80b432a0, type: 3}
 --- !u!1001 &4304881634029471829
@@ -27770,6 +27797,10 @@ PrefabInstance:
     - target: {fileID: 4304881633707004045, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
       propertyPath: m_Name
       value: Right Teleport Ray
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304881633707004045, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}

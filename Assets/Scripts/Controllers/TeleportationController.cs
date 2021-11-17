@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -19,15 +17,20 @@ public class TeleportationController : MonoBehaviour
 
     void Update()
     {
-        if(leftTeleportRay && !rightTeleportRay && !rightTeleportRay.gameObject.activeSelf) {
-            leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
-        } else if(rightTeleportRay && !leftTeleportRay && !leftTeleportRay.gameObject.activeSelf) {
-            rightTeleportRay.gameObject.SetActive(CheckIfActivated(rightTeleportRay));
+        if(leftTeleportRay || rightTeleportRay) {
+            leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay, rightTeleportRay));
+            rightTeleportRay.gameObject.SetActive(CheckIfActivated(rightTeleportRay, leftTeleportRay));
         }
     }
 
-    public bool CheckIfActivated(XRController controller) {
+    public bool CheckIfActivated(XRController controller, XRController otherHand) {
         InputHelpers.IsPressed(controller.inputDevice, teleportActivationButton, out bool isActivated, activationThreshold);
+        InputHelpers.IsPressed(otherHand.inputDevice, teleportActivationButton, out bool otherHandAlreadyActivated, activationThreshold);
+        if(otherHandAlreadyActivated) {
+            return false;
+        } else {
+            return isActivated;
+        }
         return isActivated;
     }
 }
