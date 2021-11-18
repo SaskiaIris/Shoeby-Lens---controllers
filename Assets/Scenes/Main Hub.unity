@@ -11897,6 +11897,7 @@ GameObject:
   - component: {fileID: 878763062}
   - component: {fileID: 878763061}
   - component: {fileID: 878763063}
+  - component: {fileID: 878763064}
   m_Layer: 0
   m_Name: VRrig
   m_TagString: Untagged
@@ -11981,6 +11982,28 @@ MonoBehaviour:
   rightTeleportRay: {fileID: 358324445}
   teleportActivationButton: 2
   activationThreshold: 0.1
+--- !u!114 &878763064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878763058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 1645720964}
+  - {fileID: 1820369816}
+  m_DeadZone: 0.75
 --- !u!1001 &880070517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17399,7 +17422,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1321053462}
-  - component: {fileID: 1321053463}
   m_Layer: 0
   m_Name: CameraOffset
   m_TagString: Untagged
@@ -17426,28 +17448,6 @@ Transform:
   m_Father: {fileID: 878763060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1321053463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321053461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
-  m_TurnAmount: 45
-  m_DebounceTime: 0.5
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
-  m_TurnUsage: 0
-  m_Controllers:
-  - {fileID: 1645720964}
-  - {fileID: 1820369816}
-  m_DeadZone: 0.75
 --- !u!1001 &1321444043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27731,7 +27731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2370930726588367214, guid: b12db60a297c6004596ee6ad80b432a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12db60a297c6004596ee6ad80b432a0, type: 3}
@@ -27800,6 +27800,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304881633707004045, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304881633707004047, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
+      propertyPath: m_Reticle
+      value: 
+      objectReference: {fileID: 1178179015817066, guid: 2942a9241566d9f49916c618e9dc95a7, type: 3}
+    - target: {fileID: 4304881633707004047, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
+      propertyPath: m_LineLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304881633707004047, guid: bf967e2dd02407c4f80e08234bba7bff, type: 3}
+      propertyPath: m_OverrideInteractorLineLength
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
